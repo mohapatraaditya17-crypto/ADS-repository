@@ -17,6 +17,7 @@ backend/.env
 backend/falcon_copilot.db
 backend/falconpy.zip
 backend/temp_falconpy/
+backend/data/falcon_docs/
 
 # Node/Next.js files
 frontend/node_modules/
