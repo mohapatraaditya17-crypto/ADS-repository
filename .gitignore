@@ -1,0 +1,29 @@
+# Python virtual environments and caches
+backend/.venv/
+backend/__pycache__/
+backend/.pytest_cache/
+.pytest_cache/
+*.pyc
+
+# Local configuration and environment variables
+backend/.env
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Databases and large files
+backend/falcon_copilot.db
+backend/falconpy.zip
+backend/temp_falconpy/
+
+# Node/Next.js files
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db

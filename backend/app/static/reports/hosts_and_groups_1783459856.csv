@@ -1,0 +1,13 @@
+--- HOST GROUPS ---
+Group Name,Type,Description,Assignment Rule
+FC - Pilot Hosts,static,Managed by Falcon Complete Team - This group is to be used for Pilot Hosts.,NA
+FC - Servers,dynamic,Created and managed by Falcon Complete,"(product_type_desc:'Server',product_type_desc:'Pod',product_type_desc:'Domain Controller')"
+FC - Workstations,dynamic,Managed by Falcon Complete Team - This group is to be used for Workstations.,product_type_desc:'Workstation'
+FC_ATI_DETECTION_DCS,dynamic,NA,product_type_desc:'Domain Controller'
+FC_ATI_ENFORCEMENT_DCS,static,NA,NA
+USB MAS STORAGE ALLOW,dynamic,NA,NA
+
+
+--- MANAGED HOSTS ---
+Hostname,OS Version,Local IP,Status
+No hosts found.

@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "falcon-ai-copilot-backend"
+version = "0.1.0"
+description = "FastAPI backend for Falcon AI Copilot"
+authors = ["CrowdStrike SOC Copilot Developers"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+uvicorn = "^0.28.0"
+pydantic = "^2.6.4"
+pydantic-settings = "^2.2.1"
+python-multipart = "^0.0.9"
+sse-starlette = "^2.0.0"
+langchain = "^0.1.12"
+langchain-community = "^0.0.28"
+langchain-openai = "^0.0.8"
+langgraph = "^0.0.26"
+crowdstrike-falconpy = "^1.4.0"
+psycopg2-binary = "^2.9.9"
+pgvector = "^0.2.5"
+weasyprint = "^61.2"
+python-docx = "^1.1.0"
+openpyxl = "^3.1.2"
+pandas = "^2.2.1"
+requests = "^2.31.0"
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

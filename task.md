@@ -1,0 +1,8 @@
+- [x] Implement new SQLite/PostgreSQL schemas (`document_metadata` and updated `knowledge_chunks`) in `backend/app/database.py`
+- [x] Implement Hybrid Search (semantic vector + sparse LIKE search) and RRF Reranking in `backend/app/database.py`
+- [x] Refactor `backend/app/rag/ingest.py` to add checksum auditing, semantic paragraph chunking, and incremental updates
+- [x] Refactor `backend/app/rag/retriever.py` to add deterministic query routing and confidence scoring
+- [x] Execute document ingestion script (`backend/app/rag/ingest.py`) to index the entire RAG corpus incrementally
+- [x] Create test suite `backend/tests/test_modular_rag.py`
+- [x] Run pytest to verify all test cases pass successfully
+- [x] Update `walkthrough.md` and compile `walkthrough.docx` using the python document compiler

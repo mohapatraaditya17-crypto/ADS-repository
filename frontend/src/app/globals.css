@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0D1117;
+    color: #C9D1D9;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(22, 27, 34, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(48, 54, 61, 0.6);
+}
+
+/* Pulsing severity glow animations */
+@keyframes glow-critical {
+  0%, 100% { box-shadow: 0 0 4px #FF7B72; }
+  50% { box-shadow: 0 0 12px #FF7B72; }
+}
+
+@keyframes glow-high {
+  0%, 100% { box-shadow: 0 0 4px #FFA657; }
+  50% { box-shadow: 0 0 12px #FFA657; }
+}
+
+@keyframes glow-medium {
+  0%, 100% { box-shadow: 0 0 4px #D29922; }
+  50% { box-shadow: 0 0 12px #D29922; }
+}
+
+.pulse-glow-critical {
+  animation: glow-critical 2s infinite ease-in-out;
+}
+
+.pulse-glow-high {
+  animation: glow-high 2s infinite ease-in-out;
+}
+
+.pulse-glow-medium {
+  animation: glow-medium 2s infinite ease-in-out;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D1117;
+}
+::-webkit-scrollbar-thumb {
+  background: #30363D;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B949E;
+}
